@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: travel-classifier-api
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHONUNBUFFERED
+        value: 1
