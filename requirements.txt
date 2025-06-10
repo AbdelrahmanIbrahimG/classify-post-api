@@ -4,8 +4,8 @@ uvicorn[standard]==0.24.0
 python-multipart==0.0.6
 requests==2.31.0
 
-# Lightweight PyTorch CPU-only version
-torch==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu
+# PyTorch (will use CPU by default on Render)
+torch==2.1.0
 transformers==4.35.2
 Pillow==10.1.0
 
