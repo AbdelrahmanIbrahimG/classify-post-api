@@ -1,10 +1,17 @@
+# Optimized for Render deployment
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 python-multipart==0.0.6
 requests==2.31.0
-torch==2.1.0
-torchvision==0.16.0
+
+# Lightweight PyTorch CPU-only version
+torch==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu
 transformers==4.35.2
-pillow==10.1.0
-ultralytics==8.0.206
+Pillow==10.1.0
+
+# Lightweight YOLO
+ultralytics==8.0.196
+
+# Core dependencies
 pydantic==2.5.0
+typing-extensions==4.8.0
