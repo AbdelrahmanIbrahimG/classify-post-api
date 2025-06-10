@@ -101,7 +101,7 @@ class TravelClassifierAPI:
             logger.info("Loading text classifier...")
             self.text_classifier = pipeline(
                 "zero-shot-classification",
-                model="facebook/bart-base-mnli",  # Smaller model
+                model="facebook/bart-large-mnli",  # Correct model name
                 device=-1  # Force CPU
             )
             gc.collect()  # Clean up memory
