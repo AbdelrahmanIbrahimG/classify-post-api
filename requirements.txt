@@ -1,16 +1,19 @@
-# Optimized for Render deployment
+# Fixed for Render deployment
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
 python-multipart==0.0.6
 requests==2.31.0
+
+# Fix NumPy compatibility issue
+numpy<2.0.0
 
 # PyTorch (will use CPU by default on Render)
 torch==2.1.0
 transformers==4.35.2
 Pillow==10.1.0
 
-# Lightweight YOLO
-ultralytics==8.0.196
+# Remove YOLO to save memory (uncomment if needed)
+# ultralytics==8.0.196
 
 # Core dependencies
 pydantic==2.5.0
